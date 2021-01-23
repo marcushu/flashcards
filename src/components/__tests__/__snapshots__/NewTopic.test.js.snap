@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewTopic.test renders 1`] = `
+<DocumentFragment>
+  <div>
+    <button
+      id="newTopic"
+    >
+      +
+    </button>
+    <input
+      id="newtopicText"
+      placeholder="new topic..."
+      type="text"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;

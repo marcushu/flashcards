@@ -1,0 +1,74 @@
+#searchBox {
+    color: rgb(31, 71, 202);
+    height: 30px;
+    font-size: 18px;
+    background-color: rgb(160 186 255);
+    border-bottom: white;
+    border-width: 2px;
+    border-style: solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    margin-bottom: 8px;
+}
+
+.leftColumn {
+    border-radius: 15px;
+    margin: 5px;
+    background-color:rgb(160 186 255);
+    color: white;
+    padding-left: 20px;
+    padding-right: 10px;
+    min-width: 211px;
+    grid-area: lft;
+}
+
+#newTopic {
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 2px;
+    margin-top: 10px;
+    background-color: white;
+    color:rgb(136 121 121);
+    outline: none;
+    border: none;
+    display: inline-block;
+}
+
+#newtopicText {
+    border-radius: 4px;
+    background-color: white;
+    color:white;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding-bottom: 3px;
+    padding-top: 8px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    display: inline-block;
+    width: 150px;
+
+}
+
+.selected {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    color: rgb(255, 255, 255);
+}
+
+button {
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+button:hover {
+    color: rgb(146, 85, 85);
+    cursor: pointer;
+}

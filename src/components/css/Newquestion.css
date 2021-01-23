@@ -1,0 +1,22 @@
+#newQuestionCard {
+    position: relative;
+    max-width: 600px;
+    min-height: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(50 81 164);
+    color: white;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.addQqandA {
+    width: 100%;
+    font-size: 16px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 4px;
+    border: none;
+    background-color: white;
+    outline: none;
+}

@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Newquestion renders 1`] = `
+<DocumentFragment>
+  <div
+    id="newQuestionCard"
+  >
+    <div
+      id="cardBody"
+    >
+      <h3
+        style="margin-top: 2px; margin-bottom: 2px;"
+      >
+        question:
+      </h3>
+      <input
+        class="addQqandA"
+        data-testid="newQuestion"
+        type="text"
+      />
+      <br />
+      <h3
+        style="margin-top: 14px; margin-bottom: 2px;"
+      >
+        answer:
+      </h3>
+      <textarea
+        class="addQqandA"
+        cols="50"
+        data-testid="newAnswer"
+        id="newQuestionTxt"
+        name="newQuesiton"
+        rows="10"
+        style="margin-top: 0px;"
+      />
+    </div>
+    <div
+      id="cardFooter"
+      style="font-size: 18px;"
+    >
+      <button
+        class="questionButtons"
+      >
+        Submit
+      </button>
+       
+      <button
+        class="questionButtons"
+      >
+        Cancel
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

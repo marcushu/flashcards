@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`question card renders 1`] = `
+<DocumentFragment>
+  <div
+    id="questionCard"
+  >
+    <div
+      id="cardHeader"
+    >
+      <div
+        class="cardHead"
+      >
+        <button
+          class="addDelete"
+          style="width: 30px; color: red;"
+        >
+          -
+        </button>
+        <button
+          class="addDelete"
+          style="width: 30px;"
+        >
+          +
+        </button>
+         fake question
+      </div>
+    </div>
+    <div
+      id="cardBody"
+      style="height: auto; padding-bottom: 15px;"
+    >
+      <div>
+        <button
+          id="questionMask"
+          style="visibility: visible;"
+        >
+          ?
+        </button>
+      </div>
+    </div>
+    <div
+      id="cardFooter"
+    >
+      <button
+        class="questionButtons"
+        style="width: 100%;"
+      >
+        &gt;&gt;
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

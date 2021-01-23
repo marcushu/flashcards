@@ -1,0 +1,20 @@
+.cards {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto fit-content(100%) auto;
+    grid-template-areas: 
+        "rt"
+        "hd"
+        "lft";
+}
+
+@media (min-width: 800px) {
+    .cards { 
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 90px auto;
+        grid-template-areas: 
+            "hd hd"
+            "lft rt";
+    }
+}

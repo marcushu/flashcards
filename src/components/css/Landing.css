@@ -1,0 +1,70 @@
+.landingHeaderDiv {
+    background-color: rgb(50 81 164);
+    color: white;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 300px;
+    min-height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color:  rgb(50 81 164);
+    color: white;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.landingCards {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px 1fr 1fr;
+}
+
+#leftCol {
+    background-color: rgb(230 236 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginText {
+    background-color:white;
+    color: black;
+    border: none;
+    font-size: 20px;
+    height: 40px;
+}
+
+button.loginBtn {
+    padding: 5px;
+    background-color: white;
+    border-radius: 4px;
+    color:  rgb(104 63 100);
+    width: 100%;
+}
+
+#mainStageLanding {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+@media (min-width: 800px) {
+    .landingCards { 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 90px auto;
+    }
+
+    .landingHeaderDiv {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+  }

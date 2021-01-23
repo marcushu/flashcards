@@ -1,0 +1,63 @@
+.mainStage {
+    border-radius: 15px;
+    margin: 5px;
+    background-image: linear-gradient(20deg, #bfcdfe, white, #c3ccfb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    grid-area: rt;
+}
+
+#questionCard {
+    position: relative;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(160 186 255);
+    color: rgb(0 68 218);
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 48, 119, 0.2), 0 6px 20px 0 rgba(0, 39, 70, 0.19);
+}
+
+#cardHeader {
+    display: flex;
+    justify-content:space-between;
+}
+
+.cardHead {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#cardFooter {
+    font-size: 24px;
+}
+
+#questionMask {
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+}
+
+.questionButtons {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+@media (min-width: 800px) {
+    .cardHead { 
+        font-size: 20px;
+    }
+}

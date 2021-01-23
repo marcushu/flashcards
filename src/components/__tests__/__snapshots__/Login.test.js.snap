@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login renders 1`] = `
+<DocumentFragment>
+  <div
+    class="card"
+  >
+    <div>
+      <input
+        alt="login"
+        class="loginText"
+        type="text"
+      />
+      <br />
+      <br />
+      <button
+        class="loginBtn"
+      >
+        Log In
+      </button>
+      <h4>
+        Or
+      </h4>
+      <input
+        alt="signup"
+        class="loginText"
+        type="text"
+      />
+      <br />
+      <br />
+      <button
+        class="loginBtn"
+      >
+        Sign up
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
