@@ -16,7 +16,7 @@ describe("Newquestion", () => {
         expect(asFragment()).toMatchSnapshot();
     });
 
-    it("called the hideme function on 'cancel'", () => {
+    it("calls the hideme function on 'cancel'", () => {
         const { getByRole } = render(
             <Newquestion 
                 setNewQuestion={mockFunc}
@@ -27,7 +27,7 @@ describe("Newquestion", () => {
         expect(mockFunc2).toHaveBeenCalled();
     });
 
-    it("loads text in the callback", () => {
+    it("loads correct text in the callback", () => {
         const { getByRole, getByTestId } = render(
             <Newquestion 
                 setNewQuestion={mockFunc}
