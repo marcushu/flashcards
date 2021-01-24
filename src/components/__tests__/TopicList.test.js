@@ -53,7 +53,7 @@ describe("TopicList", () => {
                 userStatus={"user"} />
         );
         
-        fireEvent.click(getByRole('button', {  name: /delete/i}));
+        fireEvent.click(getByRole('button', {  name: /-/i}));
         expect(mockDeleteFn).toHaveBeenCalledWith("java");
 
         fireEvent.click(getByRole('button', {  name: /c/i}));

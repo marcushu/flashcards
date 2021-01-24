@@ -5,14 +5,15 @@ exports[`TopicList renders 1`] = `
   <div>
     <p>
       <button
+        class="newTopic"
+        style="color: red;"
+      >
+        -
+      </button>
+      <button
         class="selected"
       >
         java
-      </button>
-      <button
-        style="color: red; font-size: 12px;"
-      >
-        delete
       </button>
     </p>
     <p>

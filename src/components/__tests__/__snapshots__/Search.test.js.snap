@@ -5,13 +5,8 @@ exports[`Search renders 1`] = `
   <div
     style="padding-top: 40px;"
   >
-    <p
-      style="color: blue;"
-    >
-      Enter a search tearm below.
-    </p>
     <p>
-      Sign in to create and save your own questions.
+      Search for a topic.
     </p>
     <input
       id="searchBox"
