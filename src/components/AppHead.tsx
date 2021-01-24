@@ -8,7 +8,7 @@ const AppHead = ({ owner }: AppProps) => {
   return (
     <div className="headerDiv">
       <div>
-        <h1>stuff I should know...</h1>
+        <h1>Stuff I should know...</h1>
       </div>
       {!!owner.length &&
         <div id="buttonGreeting">

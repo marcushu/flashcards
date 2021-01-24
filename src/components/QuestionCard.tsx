@@ -28,9 +28,11 @@ const QuestionCard = ({ randomQuestion, setshowModal, nextQuestion, deleteQuesti
   }
 
   const deleteIt = () => {
-    if (!isNil(randomQuestion.question)) {
-      deleteQuestion(randomQuestion.question);
-      newQuestion();
+    if (user.userStatus !== "GUEST") {
+      if (!isNil(randomQuestion.question)) {
+        deleteQuestion(randomQuestion.question);
+        newQuestion();
+      }
     }
   }
 
@@ -41,20 +43,10 @@ const QuestionCard = ({ randomQuestion, setshowModal, nextQuestion, deleteQuesti
         <>
           <div id="cardHeader">
             <div className="cardHead">
-              {user.userStatus !== 'GUEST' &&
-                <>
-                  <button className="addDelete" style={{ width: "30px", color: "red" }} onClick={deleteIt}>
-                    -
-                  </button>
-                  <button className="addDelete" style={{ width: "30px", color: "rgb(123 123 123)" }} onClick={() => setshowModal(true)}>
-                    +
-                  </button>
-                </>}
-              &nbsp;
               {randomQuestion.question}
             </div>
           </div>
-          <div id="cardBody" style={{height: "auto", paddingBottom: "15px"}}>
+          <div id="cardBody" style={{ height: "auto", paddingBottom: "15px" }}>
             {hideQuestion
               ?
               <div>
@@ -69,8 +61,18 @@ const QuestionCard = ({ randomQuestion, setshowModal, nextQuestion, deleteQuesti
             }
           </div>
           <div id="cardFooter">
-            <button className="questionButtons" style={{ width: "100%" }} onClick={newQuestion}>
+            <button className="addDelete"
+              style={{ width: "20%", color: "white", backgroundColor: "#8ca7ef", borderRadius: "5px 0px 0px 5px" }}
+              onClick={deleteIt}>
+              -
+            </button>
+            <button style={{ width: "60%", backgroundColor: "#3251a475", color: "white" }} onClick={newQuestion}>
               &gt;&gt;
+            </button>
+            <button className="addDelete"
+              style={{ width: "20%", color: "white", backgroundColor: "#8ca7ef", borderRadius: "0px 5px 5px 0px" }}
+              onClick={() => setshowModal(true)}>
+              +
             </button>
           </div>
         </>
