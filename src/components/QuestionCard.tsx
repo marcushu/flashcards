@@ -61,15 +61,15 @@ const QuestionCard = ({ randomQuestion, setshowModal, nextQuestion, deleteQuesti
             }
           </div>
           <div id="cardFooter">
-            <button className="addDelete"
-              style={{ width: "20%", color: "white", backgroundColor: "#8ca7ef", borderRadius: "5px 0px 0px 5px" }}
+            <button
+              style={{ width: "20%", fontStyle: "bold", color: "red", backgroundColor: "#8ca7ef", borderRadius: "5px 0px 0px 5px" }}
               onClick={deleteIt}>
               -
             </button>
             <button style={{ width: "60%", backgroundColor: "#3251a475", color: "white" }} onClick={newQuestion}>
               &gt;&gt;
             </button>
-            <button className="addDelete"
+            <button
               style={{ width: "20%", color: "white", backgroundColor: "#8ca7ef", borderRadius: "0px 5px 5px 0px" }}
               onClick={() => setshowModal(true)}>
               +

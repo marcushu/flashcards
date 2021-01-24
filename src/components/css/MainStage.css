@@ -1,11 +1,9 @@
 .mainStage {
     border-radius: 15px;
     margin: 5px;
-    background-image: linear-gradient(20deg, #bfcdfe, white, #c3ccfb);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
     grid-area: rt;
 }
 

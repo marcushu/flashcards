@@ -1,8 +1,9 @@
 .headerDiv {
     font-size: 12px;
     height: fit-content;
-    background-color:rgb(50 81 164);
-    color: white;
+    background-color:rgb(149 173 234 / 23%);
+    border-radius: 15px;
+    color: rgb(50 81 164);
     padding-left: 20px;
     display: flex;
     justify-content: space-between;

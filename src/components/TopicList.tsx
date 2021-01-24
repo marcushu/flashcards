@@ -13,18 +13,18 @@ const TopicList = ({ usersTopics, setTopic, deleteTopic, currentTopic, userStatu
         <div>
           {(usersTopics as string[]).map((topic: string) =>
             <p key={topic}>
-
-              <button 
+              {topic === currentTopic && userStatus !== 'GUEST' &&
+                <button
+                  onClick={() => deleteTopic(topic)}
+                  className="newTopic"
+                  style={{color: "red"}} >
+                  -
+                </button>}
+              <button
                 onClick={() => setTopic(topic)}
                 className={topic === currentTopic ? "selected" : ""}>
                 {topic}
               </button>
-              {topic === currentTopic && userStatus !== 'GUEST' &&
-                <button 
-                  onClick={() => deleteTopic(topic)}
-                  style={{ color: "red", fontSize: "12px" }}>
-                  delete
-                </button>}
             </p>
           )}
         </div>

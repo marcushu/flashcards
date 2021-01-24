@@ -18,7 +18,7 @@ const NewTopic = ({ addNewTopic }: NewTopicProps) => {
 
   return (
     <div>
-      <button id="newTopic" onClick={addTopic}>
+      <button className="newTopic" onClick={addTopic}>
         +
       </button>
       <input id="newtopicText"
