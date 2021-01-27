@@ -3,6 +3,7 @@ import axios from 'axios';
 import './css/Landing.css';
 import Login from './Login';
 import GuestLogin from './GuestLogin';
+import AppHead from './AppHead';
 
 
 type LoginInfo = { newUser: string } | { user: string } | "GUEST";
@@ -60,9 +61,7 @@ const Landing = ({ loginHandler }: LandingProps) => {
   return (
     <div className="landingCards">
       <div className="landingHeaderDiv">
-        <div>
-          <h1>stuff I should know...</h1>
-        </div>
+        <AppHead owner="" />
       </div>
       <div id="leftCol">
         <Login login={login} signUp={signUp} />

@@ -1,15 +1,9 @@
 #searchBox {
-    color: rgb(31, 71, 202);
+    color: rgb(58, 58, 58);
     height: 30px;
     font-size: 18px;
-    background-color: rgb(160 186 255);
-    border-bottom: white;
-    border-width: 2px;
-    border-style: solid;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    outline: none;
+    border-radius: 5px;
+    width: 160px;
     margin-bottom: 8px;
 }
 
@@ -30,8 +24,7 @@
     font-size: 24px;
     padding: 2px;
     margin-top: 10px;
-    background-color: rgb(149 173 251);
-    color:white;
+    background-color: white;
     outline: none;
     border: none;
     display: inline-block;
@@ -40,7 +33,7 @@
 #newtopicText {
     border-radius: 4px;
     background-color: white;
-    color: rgb(31, 71, 202);
+    color: black;
     outline: none;
     border: none;
     font-size: 18px;
@@ -57,18 +50,18 @@
     font-size: 24px;
     font-weight: bold;
     text-align: right;
-    color: rgb(50 81 164);
+    color: white;
 }
 
 button {
     font-size: 18px;
     background-color: transparent;
     border: none;
-    color: rgb(50 81 164);
+    color: white;
     outline: none;
 }
 
 button:hover {
-    color: white;
+    color: rgb(119, 119, 119);
     cursor: pointer;
 }

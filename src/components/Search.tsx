@@ -20,10 +20,8 @@ const Search = ({ setTopic }: SearchProps) => {
 
   return (
     <div style={{ paddingTop: "40px" }}>
-      <p style={{color: "rgb(50 81 164)"}}>
-        Search for a topic.
-      </p>      
       <input type="text"
+        placeholder="Topic Search..."
         ref={textRef}
         id="searchBox"
         onChange={e => setsearchText(e.currentTarget.value)} />

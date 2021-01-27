@@ -18,7 +18,10 @@ const NewTopic = ({ addNewTopic }: NewTopicProps) => {
 
   return (
     <div>
-      <button className="newTopic" onClick={addTopic}>
+      <button 
+        className="newTopic" 
+        style={{color: "rgb(47 47 47)"}}
+        onClick={addTopic}>
         +
       </button>
       <input id="newtopicText"
