@@ -5,9 +5,10 @@ import AppHead from './AppHead';
 import LeftPanel from './LeftPanel';
 import MainStage from './MainStage';
 import UserContext from '../UserContext';
+import APIurl from '../APIurl';
 import './css/MainApp.css';
 
-axios.defaults.baseURL = 'http://localhost:3001'; //TODO: change before deploy
+axios.defaults.baseURL = APIurl;
 
 interface UserInfoo {
   userName: string
