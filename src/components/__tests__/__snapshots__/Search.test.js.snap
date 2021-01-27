@@ -5,11 +5,9 @@ exports[`Search renders 1`] = `
   <div
     style="padding-top: 40px;"
   >
-    <p>
-      Search for a topic.
-    </p>
     <input
       id="searchBox"
+      placeholder="Topic Search..."
       type="text"
     />
     <button>
