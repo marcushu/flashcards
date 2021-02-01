@@ -9,7 +9,7 @@
 
 #questionCard {
     position: relative;
-    width: 80%;
+    width: 95%;
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: rgb(176 189 223);
@@ -49,5 +49,9 @@
 @media (min-width: 800px) {
     .cardHead { 
         font-size: 20px;
+    }
+
+    #questionCard {
+        width: 80%;
     }
 }
