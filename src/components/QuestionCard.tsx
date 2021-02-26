@@ -23,6 +23,8 @@ const QuestionCard = ({ randomQuestion, setshowModal, nextQuestion, deleteQuesti
   }, [randomQuestion]);
 
   const newQuestion = () => {
+    randomQuestion.question = "LOADING...";
+    randomQuestion.answer = "...";
     sethideQuestion(true);
     nextQuestion();
   }
