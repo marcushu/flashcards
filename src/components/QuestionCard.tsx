@@ -36,6 +36,11 @@ const QuestionCard = ({ randomQuestion, setshowModal, nextQuestion, deleteQuesti
     }
   }
 
+  const sentences = () => typeof randomQuestion.answer !== 'undefined'
+    ? randomQuestion.answer.split('\n')
+    : [""];
+
+
   return (
     <div id="questionCard">
       {randomQuestion.question
@@ -56,7 +61,9 @@ const QuestionCard = ({ randomQuestion, setshowModal, nextQuestion, deleteQuesti
               </div>
               :
               <div style={{ visibility: hideQuestion ? "hidden" : "visible" }}>
-                {randomQuestion.answer}
+                {sentences().map((line, index) => (
+                  <p key={index}>{line}</p>
+                ))}
               </div>
             }
           </div>
